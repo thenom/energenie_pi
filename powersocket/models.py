@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class DaysOfTheWeek(models.Model):
-    day = models.CharField(max_length=20)
+    day = models.CharField(max_length=20,unique=True)
     python_dayofweek = models.IntegerField(default=0)
 
     def __str__(self):
@@ -14,7 +14,7 @@ class Socket(models.Model):
         ('s', 'Schedule'),
     )
 
-    socket_id = models.IntegerField(default=0)
+    socket_id = models.IntegerField(default=0,unique=True)
     name = models.CharField(max_length=200)
     current_state = models.BooleanField(default=False)
     last_state_change = models.CharField(choices=LAST_STATE_CHANGE,default='m', max_length=1)
@@ -22,6 +22,10 @@ class Socket(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        super(Socket, self).save(*args, **kwargs) # Call the "real" save() method.
+        print 'Physically setting the socket (' + self.name + ') switch to ' + str(self.current_state)
  
 class TimeSlot(models.Model):
     start_time = models.TimeField()

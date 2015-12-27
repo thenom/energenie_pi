@@ -1,0 +1,23 @@
+<H1>Power sockets</H1>
+<br>
+<H3>Sockets list:</H3>
+{% if sockets %}
+    {% for socket in sockets %}
+        <form>
+        {{ socket.name }}:<br>
+        Schedule override:
+        {% if socket.schedule_override == True %}
+            <input type="checkbox" name="schedule_override" value="True" checked>
+        {% else %}
+            <input type="checkbox" name="schedule_override" value="False">
+        {% endif %}
+        {% if socket.current_state == True %}
+            <input type="submit" value="Turn socket off">
+        {% else %}
+            <input type="submit" value="Turn socket on">
+        {% endif %}
+        </form>
+    {% endfor %}
+{% else %}
+    <p>No sockets configured!</p>
+{% endif %}
