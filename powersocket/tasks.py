@@ -16,12 +16,11 @@ def statecheck():
     schedules = Schedule.objects.all()
     for schedule in schedules:
         now = datetime.now()
-        print schedule.TimeSlot.all()
         print 'Checking schedule: ' + schedule.description
 
-        for timeslot in schedule.TimeSlot.all():
-            print 'Checking time slot: ' + schedule.start_time + '-' + schedule.end_time + ' (' + ', '.join(day.day for day in self.days_of_week.all()) + ')'
-            if now >= timeslot.start_time and now <= timeslot.end_time:
+        for timeslot in schedule.time_slots.all():
+            print 'Checking time slot: ' + timeslot.start_time.strftime('%H:%M') + '-' + timeslot.end_time.strftime('%H:%M') + ' (' + ', '.join(day.day for day in timeslot.days_of_week.all()) + ')'
+            if now.time() >= timeslot.start_time and now.time() <= timeslot.end_time:
                 print ' - Schedule is active!'
                 for socket in sockets:
                     print '...Checking light: ' + socket.name
