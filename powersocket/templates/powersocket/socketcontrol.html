@@ -10,20 +10,38 @@
             {{ socket.name }} (Off):<br>
         {% endif %}
         <p>Configured schedules:<br>
-        {% for sched in socket.schedule_set.all %}
-            {{ sched }}
-        {% endfor %}</p>
+        {% if socket.schedule_set.all %}
+            {% for sched in socket.schedule_set.all %}
+                {{ sched }}<br>
+            {% endfor %}
+        {% else %}
+            (none)
+        {% endif %}
+        </p>
         {% if socket.current_state == True %}
-            {{ socket.name }} (On):<br>
             <input type="submit" value="Turn Socket Off"/>
             <input type="hidden" id="hiddenInput" name="change_to" value="off" />
         {% else %}
-            {{ socket.name }} (Off):<br>
             <input type="submit" value="Turn Socket On"/>
             <input type="hidden" id="hiddenInput" name="change_to" value="on" />
         {% endif %}
         </form>
     {% endfor %}
+
+    <p>
+    <form action="{% url 'powersocket:update_socket' 'allon' %}" method="post">
+        {% csrf_token %}
+        Turn all sockets on! 
+        <input type="submit" value="GO"/>
+    </form>
+    </p>
+    <p>
+    <form action="{% url 'powersocket:update_socket' 'alloff' %}" method="post">
+        {% csrf_token %}
+        Turn all sockets off! 
+        <input type="submit" value="GO"/>
+    </form>
+    </p>
 {% else %}
     <p>No sockets configured!</p>
 {% endif %}
