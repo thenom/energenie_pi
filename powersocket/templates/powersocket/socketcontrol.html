@@ -1,20 +1,26 @@
 <H1>Power sockets</H1>
-<br>
 <H3>Sockets list:</H3>
 {% if sockets %}
     {% for socket in sockets %}
-        <form>
-        {{ socket.name }}:<br>
-        Schedule override:
-        {% if socket.schedule_override == True %}
-            <input type="checkbox" name="schedule_override" value="True" checked>
-        {% else %}
-            <input type="checkbox" name="schedule_override" value="False">
-        {% endif %}
+        <form action="{% url 'powersocket:update_socket' socket.socket_id %}" method="post">
+        {% csrf_token %}
         {% if socket.current_state == True %}
-            <input type="submit" value="Turn socket off">
+            {{ socket.name }} (On):<br>
         {% else %}
-            <input type="submit" value="Turn socket on">
+            {{ socket.name }} (Off):<br>
+        {% endif %}
+        <p>Configured schedules:<br>
+        {% for sched in socket.schedule_set.all %}
+            {{ sched }}
+        {% endfor %}</p>
+        {% if socket.current_state == True %}
+            {{ socket.name }} (On):<br>
+            <input type="submit" value="Turn Socket Off"/>
+            <input type="hidden" id="hiddenInput" name="change_to" value="off" />
+        {% else %}
+            {{ socket.name }} (Off):<br>
+            <input type="submit" value="Turn Socket On"/>
+            <input type="hidden" id="hiddenInput" name="change_to" value="on" />
         {% endif %}
         </form>
     {% endfor %}

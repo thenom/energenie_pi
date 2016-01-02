@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^powersocket/', include('powersocket.urls')),
+#    url(r'^powersocket/', include('powersocket.urls')),
+    url(r'^powersocket/', include('powersocket.urls', namespace="powersocket")),
 ]
