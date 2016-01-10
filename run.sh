@@ -5,6 +5,9 @@ PYTHON=/usr/bin/python
 BINDADDR=0.0.0.0
 PORT=8000
 
+# setup days of the week
+$PYTHON "${CWD}manage.py" loaddata daysofweek.json
+
 $PYTHON "${CWD}manage.py" celerybeat &
 BEATPID=$!
 echo "Started Celerybeat [${BEATPID}]"
