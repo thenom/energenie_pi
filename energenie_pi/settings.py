@@ -77,21 +77,10 @@ WSGI_APPLICATION = 'energenie_pi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'energenie-pi',
-        'USER': 'energenie-pi',
-        'PASSWORD': 'Passw0rd',
-        'HOST': 'stbignas2.thenom.local',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -120,8 +109,7 @@ STATIC_URL = '/static/'
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 
-#BROKER_URL = 'amqp://energenie_pi:Passw0rd@localhost:5672/energenie_pi'
-BROKER_URL = 'amqp://energenie_pi:Passw0rd@stbignas2.thenom.local:5672/energenie_pi'
+BROKER_URL = 'amqp://energenie_pi:Passw0rd@localhost:5672/energenie_pi'
 
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
