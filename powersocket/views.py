@@ -26,7 +26,7 @@ def update_socket(request, socket_id):
             socket.current_state = state
             socket.save()
     else:
-        socket = get_object_or_404(Socket, pk=socket_id)
+        socket = get_object_or_404(Socket, socket_id=socket_id)
 
         print 'Setting socket ' + socket.name + ' to: ' + request.POST['change_to']
         if request.POST['change_to'] == 'on':

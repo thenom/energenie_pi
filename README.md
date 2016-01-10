@@ -1,6 +1,6 @@
 # Energenie Pi Control
 
-This is a Django project that uses Celery for scheduling and provides a basic control webpage.  It is designed for use with the Raspberry Pi and the Energenie Pi Hat (ENER314\ENER314).  The default is to use a local SQLLite DB file but this can be changed (https://docs.djangoproject.com/en/1.9/ref/settings/#databases). It also requires a RabbitMQ setup for Celery transactions.
+This is a Django project that uses Celery for scheduling and provides a basic control webpage.  It is designed for use with the Raspberry Pi and the Energenie Pi Hat (ENER314\ENER314-RT).  The default is to use a local SQLLite DB file but this can be changed (https://docs.djangoproject.com/en/1.9/ref/settings/#databases). It also requires a RabbitMQ setup for Celery transactions.
 
 Basic useful feature list:
 
@@ -14,7 +14,7 @@ Dependencies:
  * Django 1.8
  * RabbitMQ server
  * Raspberry Pi with Networking
- * Energenie Raspberry Pi Hat (ENER314\ENER314)   # See Note1
+ * Energenie Raspberry Pi Hat (ENER314\ENER314-RT)   # See Note1
  * Energenie python module # See Note2
 
 
@@ -36,6 +36,9 @@ Django server - This provides the main django framwork admin page and the basic 
 ```
 $ python manage.py runserver 0.0.0.0:8000
 ```
+
+#Setup
+You will need to modify the run script to match your own working directory.  You will also need to modify the celery ampq URL to match your own RabbitMQ server setup.  It is currently using a vhost of 'energenie_pi', a user of 'energenie_pi' and password 'Passw0rd'
 
 Notes:
 
