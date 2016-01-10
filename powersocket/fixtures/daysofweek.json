@@ -1,0 +1,56 @@
+[{
+    "fields": {
+        "day": "Monday",
+        "python_dayofweek": 0
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 1
+},
+{
+    "fields": {
+        "day": "Tuesday",
+        "python_dayofweek": 1
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 2
+},
+{
+    "fields": {
+        "day": "Wednesday",
+        "python_dayofweek": 2
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 3
+},
+{
+    "fields": {
+        "day": "Thursday",
+        "python_dayofweek": 3
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 4
+},
+{
+    "fields": {
+        "day": "Friday",
+        "python_dayofweek": 4
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 5
+},
+{
+    "fields": {
+        "day": "Saturday",
+        "python_dayofweek": 5
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 6
+},
+{
+    "fields": {
+        "day": "Sunday",
+        "python_dayofweek": 6
+    },
+    "model": "powersocket.daysoftheweek",
+    "pk": 7
+}]
