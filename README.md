@@ -37,7 +37,7 @@ Django server - This provides the main django framwork admin page and the basic 
 $ python manage.py runserver 0.0.0.0:8000
 ```
 
-#Setup
+# Setup
 You will need to modify the run script to match your own working directory.  You will also need to modify the celery ampq URL to match your own RabbitMQ server setup.  It is currently using a vhost of 'energenie_pi', a user of 'energenie_pi' and password 'Passw0rd'
 
 Notes:
