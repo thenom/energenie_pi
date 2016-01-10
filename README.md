@@ -38,9 +38,9 @@ $ python manage.py runserver 0.0.0.0:8000
 ```
 
 # Setup
-You will need to modify the run script to match your own working directory.  You will also need to modify the celery ampq URL to match your own RabbitMQ server setup.  It is currently using a vhost of 'energenie_pi', a user of 'energenie_pi' and password 'Passw0rd'
+You will need to modify the run script to match your own working directory.  You will also need to modify the celery ampq URL in energenie_pi/settings.py to match your own RabbitMQ server setup.  It is currently using a vhost of 'energenie_pi', a user of 'energenie_pi' and password 'Passw0rd'
 
-Notes:
+# Notes:
 
 1. A Rapberry Pi or the Energenie Hat is not required as the code catches this and disables the control for testing purposes.
 2. To install this module just run 'pip install energenie'
