@@ -16,7 +16,13 @@ Dependencies:
  * Raspberry Pi with Networking
  * Energenie Raspberry Pi Hat (ENER314\ENER314-RT)   # See Note1
  * Energenie python module # See Note2
-
+ 
+```
+yum install MySQL-python
+yum install python-devel
+pip install django-celery==3.1.17
+pip install celery==3.1.19
+```
 
 I have created a startup script for this as there are 3 processes required for this to fully function but it is basic and doesn't control the django server properly as it spawns other subprocesses and the main process ends:
 ```
