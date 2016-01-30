@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CWD="/home/thenom.local/simon.thorley/SimonNas/Energinie RPi/energenie_pi/"
+CWD="/usr/local/energenie-pi/"
 PYTHON=/usr/bin/python
 BINDADDR=0.0.0.0
 PORT=8000
@@ -18,12 +18,23 @@ $PYTHON "${CWD}manage.py" runserver ${BINDADDR}:${PORT} &
 SERVERPID=$!
 echo "Started Server [${SERVERPID}]"
 
+trap ctrl_c INT
+
+function ctrl_c() {
+    kill ${CELERYPID}
+    kill ${SERVERPID}
+    kill ${BEATPID}
+    kill $(ps aux | grep 'manage.py runserver' | grep -v grep | awk '{print $2}')
+    exit 0
+}
+
 while true; do
     kill -s 0 ${BEATPID}
     if [ $? -ne 0 ]; then
         echo "Celerybeat has died..."
         kill ${CELERYPID}
         kill ${SERVERPID}
+        killall $(ps aux | grep 'manage.py runserver' | awk '{print $2}')
         exit 1
     fi
     kill -s 0 ${CELERYPID}
@@ -31,6 +42,7 @@ while true; do
         echo "CeleryD has died..."
         kill ${BEATPID}
         kill ${SERVERPID}
+        killall $(ps aux | grep 'manage.py runserver' | awk '{print $2}')
         exit 1
     fi
     kill -s 0 ${SERVERPID}

@@ -1,5 +1,7 @@
 from django.db import models
-import socket_functions
+from socket_functions import socket_control
+
+energenie = socket_control()
 
 # Create your models here.
 class DaysOfTheWeek(models.Model):
@@ -26,9 +28,9 @@ class Socket(models.Model):
         super(Socket, self).save(*args, **kwargs) # Call the "real" save() method.
         print 'Physically setting the socket (' + self.name + ') switch to ' + str(self.current_state)
         if self.current_state == True:
-             socket_functions.socket_on(self.id)
+             energenie.socket_on(self.id)
         else:
-             socket_functions.socket_off(self.id)
+             energenie.socket_off(self.id)
  
 class TimeSlot(models.Model):
     start_time = models.TimeField(help_text='Seconds are ignored')
