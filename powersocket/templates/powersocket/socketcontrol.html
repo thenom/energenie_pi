@@ -86,11 +86,13 @@
         </td>
         <td width="200" bgcolor="GreenYellow" class="allsubmit">
           <form action="{% url 'powersocket:update_socket' 'allon' %}" method="post">
+            {% csrf_token %}
             <input type="submit" value="All On">
           </form>
         </td>
         <td width="200" bgcolor="Brown" class="allsubmit">
           <form action="{% url 'powersocket:update_socket' 'alloff' %}" method="post">
+            {% csrf_token %}
             <input type="submit" value="All Off">
           </form>
         </td>
@@ -105,6 +107,11 @@
           <form action="{% url 'powersocket:update_socket' socket.socket_id %}" method="post">
             {% csrf_token %}
             <input type="submit" value="{{ socket.name }}">
+            {% if socket.current_state == True %}
+            <input type="hidden" id="hiddenInput" name="change_to" value="off" />
+            {% else %}
+            <input type="hidden" id="hiddenInput" name="change_to" value="on" />
+            {% endif %}
             <p>Schedules:
             {% if socket.schedule_set.all %}
             {% for sched in socket.schedule_set.all %}
