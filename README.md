@@ -9,13 +9,12 @@ Basic useful feature list:
  * Add multiple time slots to each schedule
  * Basic web page for control and sockets current status
 
-Dependencies:
+# Dependencies
 
  * Django 1.8
  * RabbitMQ server
  * Raspberry Pi with Networking
  * Energenie Raspberry Pi Hat (ENER314\ENER314-RT)   # See Note1
- * Energenie python module # See Note2
  
 ```
 yum install MySQL-python
@@ -24,6 +23,14 @@ pip install django-celery==3.1.17
 pip install celery==3.1.19
 pip install django==1.8.7
 ```
+
+# Screenshot
+
+![Alt text](/screenshot.png?raw=true "Control page")
+
+
+
+# Running
 
 I have created a startup script for this as there are 3 processes required for this to fully function but it is basic and doesn't control the django server properly as it spawns other subprocesses and the main process ends:
 ```
@@ -52,4 +59,3 @@ You will also need to change your 'ALLOWED_HOSTS' in energenie_pi/settings.py to
 # Notes:
 
 1. A Rapberry Pi or the Energenie Hat is not required as the code catches this and disables the control for testing purposes.
-2. To install this module just run 'pip install energenie'
