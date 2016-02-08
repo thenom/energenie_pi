@@ -1,5 +1,6 @@
 from django.db import models
 from socket_functions import socket_control
+import random
 
 energenie = socket_control()
 
@@ -33,17 +34,25 @@ class Socket(models.Model):
              energenie.socket_off(self.id)
  
 class TimeSlot(models.Model):
-    start_time = models.TimeField(help_text='Seconds are ignored')
-    end_time = models.TimeField(help_text='Seconds are ignored')
+    start_time = models.TimeField()
+    end_time = models.TimeField()
     days_of_week = models.ManyToManyField(DaysOfTheWeek)
 
     def __str__(self):
-        return self.start_time.strftime('%H:%M') + '-' + self.end_time.strftime('%H:%M') + ' (' + ', '.join(day.day for day in self.days_of_week.all()) + ')'
+        return self.start_time.strftime('%H:%M:%S') + '-' + self.end_time.strftime('%H:%M:%S') + ' (' + ', '.join(day.day for day in self.days_of_week.all()) + ')'
 
 class Schedule(models.Model):
     description = models.CharField(max_length=200,default='')
     socket = models.ManyToManyField(Socket)
     time_slots = models.ManyToManyField(TimeSlot, blank=True)
+    random_range = models.IntegerField(help_text='Random seconds range to apply before\\after the actual start time')
+    current_random_deviation = models.IntegerField(default=0)
 
     def __str__(self):
         return self.description
+
+    def save(self, *args, **kwargs):
+        rand_num = random.randint(0,self.random_range*2)
+        rand_num = rand_num - self.random_range
+        self.current_random_deviation = rand_num
+        super(Schedule, self).save(*args, **kwargs) # Call the "real" save() method.

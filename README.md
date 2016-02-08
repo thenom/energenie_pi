@@ -2,12 +2,15 @@
 
 This is a Django project that uses Celery for scheduling and provides a basic control webpage.  It is designed for use with the Raspberry Pi and the Energenie Pi Hat (ENER314\ENER314-RT).  The default is to use a local SQLLite DB file but this can be changed (https://docs.djangoproject.com/en/1.9/ref/settings/#databases). It also requires a RabbitMQ setup for Celery transactions.
 
+It check the schedules every second and modifies the state of the socket accordingly.  You can apply a random deviation the the schedule to mimic variations in turning the sockets on and off.  For example, if a schedule is set to turn a light on at 16:30:00 and has a random second value of 30 seconds then the light will turn on between 16:29:30 and 16:30:30.
+
 Basic useful feature list:
 
  * Setup and modify sockets for control
  * Setup multiple schedules and control multiple sockets via each schedule
  * Add multiple time slots to each schedule
  * Basic web page for control and sockets current status
+ * Randomly changes the on\off time based on a deviation value in seconds
 
 # Dependencies
 

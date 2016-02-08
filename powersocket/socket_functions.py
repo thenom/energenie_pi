@@ -49,7 +49,7 @@ class socket_control:
 	except RuntimeError, e:  
 	    print e.message  
 	    print 'Error importing GPIO modules. Socket control disabled!'  
-	    socket_control_enabled = False  
+	    self.socket_control_enabled = False  
 	    pass
 
     def socket_on(self,socket_id):
@@ -105,23 +105,24 @@ class socket_control:
 
 
     def select_socket(self, socket_id):
-        if socket_id == 1:
-            print 'Selecting socket 1...'
-            self.GPIO.output (11, True)
-            self.GPIO.output (15, True)
-            self.GPIO.output (16, True)
-        elif socket_id == 2:
-            print 'Selecting socket 2...'
-            self.GPIO.output (11, False)
-            self.GPIO.output (15, True)
-            self.GPIO.output (16, True)
-        elif socket_id == 3:
-            print 'Selecting socket 3...'
-            self.GPIO.output (11, True)
-            self.GPIO.output (15, False)
-            self.GPIO.output (16, True)
-        elif socket_id == 4:
-            print 'Selecting socket 4...'
-            self.GPIO.output (11, True)
-            self.GPIO.output (15, False)
-            self.GPIO.output (16, False)
+        if self.socket_control_enabled == False:
+            if socket_id == 1:
+                print 'Selecting socket 1...'
+                self.GPIO.output (11, True)
+                self.GPIO.output (15, True)
+                self.GPIO.output (16, True)
+            elif socket_id == 2:
+                print 'Selecting socket 2...'
+                self.GPIO.output (11, False)
+                self.GPIO.output (15, True)
+                self.GPIO.output (16, True)
+            elif socket_id == 3:
+                print 'Selecting socket 3...'
+                self.GPIO.output (11, True)
+                self.GPIO.output (15, False)
+                self.GPIO.output (16, True)
+            elif socket_id == 4:
+                print 'Selecting socket 4...'
+                self.GPIO.output (11, True)
+                self.GPIO.output (15, False)
+                self.GPIO.output (16, False)
