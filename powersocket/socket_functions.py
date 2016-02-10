@@ -105,7 +105,7 @@ class socket_control:
 
 
     def select_socket(self, socket_id):
-        if self.socket_control_enabled == False:
+        if self.socket_control_enabled == True:
             if socket_id == 1:
                 print 'Selecting socket 1...'
                 self.GPIO.output (11, True)
