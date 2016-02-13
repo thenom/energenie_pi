@@ -1,0 +1,2541 @@
+[{
+    "fields": {
+        "city": "Aberdeen"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 1
+},
+{
+    "fields": {
+        "city": "Abu Dhabi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 2
+},
+{
+    "fields": {
+        "city": "Abuja"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 4
+},
+{
+    "fields": {
+        "city": "Accra"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 5
+},
+{
+    "fields": {
+        "city": "Addis Ababa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 6
+},
+{
+    "fields": {
+        "city": "Adelaide"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 7
+},
+{
+    "fields": {
+        "city": "Al Jubail"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 8
+},
+{
+    "fields": {
+        "city": "Albany"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 9
+},
+{
+    "fields": {
+        "city": "Albuquerque"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 10
+},
+{
+    "fields": {
+        "city": "Algiers"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 11
+},
+{
+    "fields": {
+        "city": "Amman"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 12
+},
+{
+    "fields": {
+        "city": "Amsterdam"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 13
+},
+{
+    "fields": {
+        "city": "Anchorage"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 14
+},
+{
+    "fields": {
+        "city": "Andorra la Vella"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 15
+},
+{
+    "fields": {
+        "city": "Ankara"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 16
+},
+{
+    "fields": {
+        "city": "Annapolis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 17
+},
+{
+    "fields": {
+        "city": "Antananarivo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 18
+},
+{
+    "fields": {
+        "city": "Apia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 19
+},
+{
+    "fields": {
+        "city": "Ashgabat"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 20
+},
+{
+    "fields": {
+        "city": "Asmara"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 21
+},
+{
+    "fields": {
+        "city": "Astana"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 22
+},
+{
+    "fields": {
+        "city": "Asuncion"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 23
+},
+{
+    "fields": {
+        "city": "Athens"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 24
+},
+{
+    "fields": {
+        "city": "Atlanta"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 25
+},
+{
+    "fields": {
+        "city": "Augusta"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 26
+},
+{
+    "fields": {
+        "city": "Austin"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 27
+},
+{
+    "fields": {
+        "city": "Avarua"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 28
+},
+{
+    "fields": {
+        "city": "Baghdad"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 29
+},
+{
+    "fields": {
+        "city": "Baku"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 30
+},
+{
+    "fields": {
+        "city": "Baltimore"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 31
+},
+{
+    "fields": {
+        "city": "Bamako"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 32
+},
+{
+    "fields": {
+        "city": "Bandar Seri Begawan"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 33
+},
+{
+    "fields": {
+        "city": "Bangkok"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 34
+},
+{
+    "fields": {
+        "city": "Bangui"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 35
+},
+{
+    "fields": {
+        "city": "Banjul"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 36
+},
+{
+    "fields": {
+        "city": "Barrow-In-Furness"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 37
+},
+{
+    "fields": {
+        "city": "Basse-Terre"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 38
+},
+{
+    "fields": {
+        "city": "Basseterre"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 39
+},
+{
+    "fields": {
+        "city": "Baton Rouge"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 40
+},
+{
+    "fields": {
+        "city": "Beijing"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 41
+},
+{
+    "fields": {
+        "city": "Beirut"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 42
+},
+{
+    "fields": {
+        "city": "Belfast"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 43
+},
+{
+    "fields": {
+        "city": "Belgrade"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 44
+},
+{
+    "fields": {
+        "city": "Belmopan"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 45
+},
+{
+    "fields": {
+        "city": "Berlin"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 46
+},
+{
+    "fields": {
+        "city": "Bern"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 47
+},
+{
+    "fields": {
+        "city": "Billings"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 48
+},
+{
+    "fields": {
+        "city": "Birmingham"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 49
+},
+{
+    "fields": {
+        "city": "Bishkek"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 51
+},
+{
+    "fields": {
+        "city": "Bismarck"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 52
+},
+{
+    "fields": {
+        "city": "Bissau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 53
+},
+{
+    "fields": {
+        "city": "Bloemfontein"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 54
+},
+{
+    "fields": {
+        "city": "Bogota"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 55
+},
+{
+    "fields": {
+        "city": "Boise"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 56
+},
+{
+    "fields": {
+        "city": "Bolton"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 57
+},
+{
+    "fields": {
+        "city": "Boston"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 58
+},
+{
+    "fields": {
+        "city": "Bradford"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 59
+},
+{
+    "fields": {
+        "city": "Brasilia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 60
+},
+{
+    "fields": {
+        "city": "Bratislava"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 61
+},
+{
+    "fields": {
+        "city": "Brazzaville"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 62
+},
+{
+    "fields": {
+        "city": "Bridgeport"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 63
+},
+{
+    "fields": {
+        "city": "Bridgetown"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 64
+},
+{
+    "fields": {
+        "city": "Brisbane"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 65
+},
+{
+    "fields": {
+        "city": "Bristol"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 66
+},
+{
+    "fields": {
+        "city": "Brussels"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 67
+},
+{
+    "fields": {
+        "city": "Bucharest"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 68
+},
+{
+    "fields": {
+        "city": "Bucuresti"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 69
+},
+{
+    "fields": {
+        "city": "Budapest"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 70
+},
+{
+    "fields": {
+        "city": "Buenos Aires"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 71
+},
+{
+    "fields": {
+        "city": "Buffalo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 72
+},
+{
+    "fields": {
+        "city": "Bujumbura"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 73
+},
+{
+    "fields": {
+        "city": "Burlington"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 74
+},
+{
+    "fields": {
+        "city": "Cairo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 75
+},
+{
+    "fields": {
+        "city": "Canberra"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 76
+},
+{
+    "fields": {
+        "city": "Cape Town"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 77
+},
+{
+    "fields": {
+        "city": "Caracas"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 78
+},
+{
+    "fields": {
+        "city": "Cardiff"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 79
+},
+{
+    "fields": {
+        "city": "Carson City"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 80
+},
+{
+    "fields": {
+        "city": "Castries"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 81
+},
+{
+    "fields": {
+        "city": "Cayenne"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 82
+},
+{
+    "fields": {
+        "city": "Charleston"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 83
+},
+{
+    "fields": {
+        "city": "Charlotte"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 84
+},
+{
+    "fields": {
+        "city": "Charlotte Amalie"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 85
+},
+{
+    "fields": {
+        "city": "Cheyenne"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 86
+},
+{
+    "fields": {
+        "city": "Chicago"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 87
+},
+{
+    "fields": {
+        "city": "Chisinau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 88
+},
+{
+    "fields": {
+        "city": "Cleveland"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 89
+},
+{
+    "fields": {
+        "city": "Columbia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 90
+},
+{
+    "fields": {
+        "city": "Columbus"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 91
+},
+{
+    "fields": {
+        "city": "Conakry"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 92
+},
+{
+    "fields": {
+        "city": "Concord"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 93
+},
+{
+    "fields": {
+        "city": "Copenhagen"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 94
+},
+{
+    "fields": {
+        "city": "Cotonou"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 95
+},
+{
+    "fields": {
+        "city": "Crawley"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 96
+},
+{
+    "fields": {
+        "city": "Dakar"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 97
+},
+{
+    "fields": {
+        "city": "Dallas"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 98
+},
+{
+    "fields": {
+        "city": "Damascus"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 99
+},
+{
+    "fields": {
+        "city": "Dammam"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 100
+},
+{
+    "fields": {
+        "city": "Denver"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 101
+},
+{
+    "fields": {
+        "city": "Des Moines"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 102
+},
+{
+    "fields": {
+        "city": "Detroit"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 103
+},
+{
+    "fields": {
+        "city": "Dhaka"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 104
+},
+{
+    "fields": {
+        "city": "Dili"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 105
+},
+{
+    "fields": {
+        "city": "Djibouti"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 106
+},
+{
+    "fields": {
+        "city": "Dodoma"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 107
+},
+{
+    "fields": {
+        "city": "Doha"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 108
+},
+{
+    "fields": {
+        "city": "Douglas"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 109
+},
+{
+    "fields": {
+        "city": "Dover"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 110
+},
+{
+    "fields": {
+        "city": "Dublin"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 111
+},
+{
+    "fields": {
+        "city": "Dushanbe"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 112
+},
+{
+    "fields": {
+        "city": "Edinburgh"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 113
+},
+{
+    "fields": {
+        "city": "El Aaiun"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 114
+},
+{
+    "fields": {
+        "city": "Fargo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 115
+},
+{
+    "fields": {
+        "city": "Fort-de-France"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 116
+},
+{
+    "fields": {
+        "city": "Frankfort"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 117
+},
+{
+    "fields": {
+        "city": "Freetown"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 118
+},
+{
+    "fields": {
+        "city": "Funafuti"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 119
+},
+{
+    "fields": {
+        "city": "Gaborone"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 120
+},
+{
+    "fields": {
+        "city": "George Town"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 121
+},
+{
+    "fields": {
+        "city": "Georgetown"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 122
+},
+{
+    "fields": {
+        "city": "Gibraltar"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 123
+},
+{
+    "fields": {
+        "city": "Glasgow"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 124
+},
+{
+    "fields": {
+        "city": "Greenwich"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 125
+},
+{
+    "fields": {
+        "city": "Guatemala"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 126
+},
+{
+    "fields": {
+        "city": "Hanoi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 127
+},
+{
+    "fields": {
+        "city": "Harare"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 128
+},
+{
+    "fields": {
+        "city": "Harrisburg"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 129
+},
+{
+    "fields": {
+        "city": "Hartford"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 130
+},
+{
+    "fields": {
+        "city": "Havana"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 131
+},
+{
+    "fields": {
+        "city": "Helena"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 132
+},
+{
+    "fields": {
+        "city": "Helsinki"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 133
+},
+{
+    "fields": {
+        "city": "Hobart"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 134
+},
+{
+    "fields": {
+        "city": "Hong Kong"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 135
+},
+{
+    "fields": {
+        "city": "Honiara"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 136
+},
+{
+    "fields": {
+        "city": "Honolulu"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 137
+},
+{
+    "fields": {
+        "city": "Houston"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 138
+},
+{
+    "fields": {
+        "city": "Indianapolis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 139
+},
+{
+    "fields": {
+        "city": "Islamabad"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 140
+},
+{
+    "fields": {
+        "city": "Jackson"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 141
+},
+{
+    "fields": {
+        "city": "Jacksonville"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 142
+},
+{
+    "fields": {
+        "city": "Jakarta"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 143
+},
+{
+    "fields": {
+        "city": "Jefferson City"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 144
+},
+{
+    "fields": {
+        "city": "Jerusalem"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 145
+},
+{
+    "fields": {
+        "city": "Juba"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 146
+},
+{
+    "fields": {
+        "city": "Jubail"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 147
+},
+{
+    "fields": {
+        "city": "Juneau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 148
+},
+{
+    "fields": {
+        "city": "Kabul"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 149
+},
+{
+    "fields": {
+        "city": "Kampala"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 150
+},
+{
+    "fields": {
+        "city": "Kansas City"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 151
+},
+{
+    "fields": {
+        "city": "Kathmandu"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 152
+},
+{
+    "fields": {
+        "city": "Khartoum"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 153
+},
+{
+    "fields": {
+        "city": "Kiev"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 154
+},
+{
+    "fields": {
+        "city": "Kigali"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 155
+},
+{
+    "fields": {
+        "city": "Kingston"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 156
+},
+{
+    "fields": {
+        "city": "Kingstown"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 158
+},
+{
+    "fields": {
+        "city": "Kinshasa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 159
+},
+{
+    "fields": {
+        "city": "Koror"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 160
+},
+{
+    "fields": {
+        "city": "Kuala Lumpur"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 161
+},
+{
+    "fields": {
+        "city": "Kuwait"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 162
+},
+{
+    "fields": {
+        "city": "La Paz"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 163
+},
+{
+    "fields": {
+        "city": "Lansing"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 164
+},
+{
+    "fields": {
+        "city": "Las Vegas"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 165
+},
+{
+    "fields": {
+        "city": "Leeds"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 166
+},
+{
+    "fields": {
+        "city": "Leicester"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 167
+},
+{
+    "fields": {
+        "city": "Libreville"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 168
+},
+{
+    "fields": {
+        "city": "Lilongwe"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 169
+},
+{
+    "fields": {
+        "city": "Lima"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 170
+},
+{
+    "fields": {
+        "city": "Lincoln"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 171
+},
+{
+    "fields": {
+        "city": "Lisbon"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 172
+},
+{
+    "fields": {
+        "city": "Little Rock"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 173
+},
+{
+    "fields": {
+        "city": "Liverpool"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 174
+},
+{
+    "fields": {
+        "city": "Ljubljana"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 175
+},
+{
+    "fields": {
+        "city": "Lome"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 176
+},
+{
+    "fields": {
+        "city": "London"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 177
+},
+{
+    "fields": {
+        "city": "Los Angeles"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 178
+},
+{
+    "fields": {
+        "city": "Louisville"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 179
+},
+{
+    "fields": {
+        "city": "Luanda"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 180
+},
+{
+    "fields": {
+        "city": "Lusaka"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 181
+},
+{
+    "fields": {
+        "city": "Luxembourg"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 182
+},
+{
+    "fields": {
+        "city": "Macau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 183
+},
+{
+    "fields": {
+        "city": "Madinah"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 184
+},
+{
+    "fields": {
+        "city": "Madison"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 185
+},
+{
+    "fields": {
+        "city": "Madrid"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 186
+},
+{
+    "fields": {
+        "city": "Majuro"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 187
+},
+{
+    "fields": {
+        "city": "Makkah"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 188
+},
+{
+    "fields": {
+        "city": "Malabo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 189
+},
+{
+    "fields": {
+        "city": "Male"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 190
+},
+{
+    "fields": {
+        "city": "Mamoudzou"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 191
+},
+{
+    "fields": {
+        "city": "Managua"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 192
+},
+{
+    "fields": {
+        "city": "Manama"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 193
+},
+{
+    "fields": {
+        "city": "Manchester"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 194
+},
+{
+    "fields": {
+        "city": "Manila"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 196
+},
+{
+    "fields": {
+        "city": "Maputo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 197
+},
+{
+    "fields": {
+        "city": "Maseru"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 198
+},
+{
+    "fields": {
+        "city": "Masqat"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 199
+},
+{
+    "fields": {
+        "city": "Mbabane"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 200
+},
+{
+    "fields": {
+        "city": "Mecca"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 201
+},
+{
+    "fields": {
+        "city": "Medina"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 202
+},
+{
+    "fields": {
+        "city": "Memphis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 203
+},
+{
+    "fields": {
+        "city": "Mexico"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 204
+},
+{
+    "fields": {
+        "city": "Miami"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 205
+},
+{
+    "fields": {
+        "city": "Milwaukee"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 206
+},
+{
+    "fields": {
+        "city": "Minneapolis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 207
+},
+{
+    "fields": {
+        "city": "Minsk"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 208
+},
+{
+    "fields": {
+        "city": "Mogadishu"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 209
+},
+{
+    "fields": {
+        "city": "Monaco"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 210
+},
+{
+    "fields": {
+        "city": "Monrovia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 211
+},
+{
+    "fields": {
+        "city": "Montevideo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 212
+},
+{
+    "fields": {
+        "city": "Montgomery"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 213
+},
+{
+    "fields": {
+        "city": "Montpelier"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 214
+},
+{
+    "fields": {
+        "city": "Moroni"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 215
+},
+{
+    "fields": {
+        "city": "Moscow"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 216
+},
+{
+    "fields": {
+        "city": "Moskva"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 217
+},
+{
+    "fields": {
+        "city": "Mumbai"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 218
+},
+{
+    "fields": {
+        "city": "Muscat"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 219
+},
+{
+    "fields": {
+        "city": "N'Djamena"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 220
+},
+{
+    "fields": {
+        "city": "Nairobi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 221
+},
+{
+    "fields": {
+        "city": "Nashville"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 222
+},
+{
+    "fields": {
+        "city": "Nassau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 223
+},
+{
+    "fields": {
+        "city": "Naypyidaw"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 224
+},
+{
+    "fields": {
+        "city": "New Delhi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 225
+},
+{
+    "fields": {
+        "city": "New Orleans"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 226
+},
+{
+    "fields": {
+        "city": "New York"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 227
+},
+{
+    "fields": {
+        "city": "Newark"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 228
+},
+{
+    "fields": {
+        "city": "Newcastle"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 229
+},
+{
+    "fields": {
+        "city": "Newcastle Upon Time"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 230
+},
+{
+    "fields": {
+        "city": "Ngerulmud"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 231
+},
+{
+    "fields": {
+        "city": "Niamey"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 232
+},
+{
+    "fields": {
+        "city": "Nicosia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 233
+},
+{
+    "fields": {
+        "city": "Norwich"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 234
+},
+{
+    "fields": {
+        "city": "Nouakchott"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 235
+},
+{
+    "fields": {
+        "city": "Noumea"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 236
+},
+{
+    "fields": {
+        "city": "Nuku'alofa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 237
+},
+{
+    "fields": {
+        "city": "Nuuk"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 238
+},
+{
+    "fields": {
+        "city": "Oklahoma City"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 239
+},
+{
+    "fields": {
+        "city": "Olympia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 240
+},
+{
+    "fields": {
+        "city": "Omaha"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 241
+},
+{
+    "fields": {
+        "city": "Oranjestad"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 242
+},
+{
+    "fields": {
+        "city": "Orlando"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 243
+},
+{
+    "fields": {
+        "city": "Oslo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 244
+},
+{
+    "fields": {
+        "city": "Ottawa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 245
+},
+{
+    "fields": {
+        "city": "Ouagadougou"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 246
+},
+{
+    "fields": {
+        "city": "Oxford"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 247
+},
+{
+    "fields": {
+        "city": "P'yongyang"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 248
+},
+{
+    "fields": {
+        "city": "Pago Pago"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 249
+},
+{
+    "fields": {
+        "city": "Palikir"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 250
+},
+{
+    "fields": {
+        "city": "Panama"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 251
+},
+{
+    "fields": {
+        "city": "Papeete"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 252
+},
+{
+    "fields": {
+        "city": "Paramaribo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 253
+},
+{
+    "fields": {
+        "city": "Paris"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 254
+},
+{
+    "fields": {
+        "city": "Perth"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 255
+},
+{
+    "fields": {
+        "city": "Philadelphia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 256
+},
+{
+    "fields": {
+        "city": "Phnom Penh"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 257
+},
+{
+    "fields": {
+        "city": "Phoenix"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 258
+},
+{
+    "fields": {
+        "city": "Pierre"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 259
+},
+{
+    "fields": {
+        "city": "Plymouth"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 260
+},
+{
+    "fields": {
+        "city": "Podgorica"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 261
+},
+{
+    "fields": {
+        "city": "Port Louis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 262
+},
+{
+    "fields": {
+        "city": "Port Moresby"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 263
+},
+{
+    "fields": {
+        "city": "Port of Spain"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 264
+},
+{
+    "fields": {
+        "city": "Port-Vila"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 265
+},
+{
+    "fields": {
+        "city": "Port-au-Prince"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 266
+},
+{
+    "fields": {
+        "city": "Portland"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 267
+},
+{
+    "fields": {
+        "city": "Porto-Novo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 269
+},
+{
+    "fields": {
+        "city": "Portsmouth"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 270
+},
+{
+    "fields": {
+        "city": "Prague"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 271
+},
+{
+    "fields": {
+        "city": "Praia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 272
+},
+{
+    "fields": {
+        "city": "Pretoria"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 273
+},
+{
+    "fields": {
+        "city": "Pristina"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 274
+},
+{
+    "fields": {
+        "city": "Providence"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 275
+},
+{
+    "fields": {
+        "city": "Quito"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 276
+},
+{
+    "fields": {
+        "city": "Rabat"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 277
+},
+{
+    "fields": {
+        "city": "Raleigh"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 278
+},
+{
+    "fields": {
+        "city": "Reading"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 279
+},
+{
+    "fields": {
+        "city": "Reykjavik"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 280
+},
+{
+    "fields": {
+        "city": "Richmond"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 281
+},
+{
+    "fields": {
+        "city": "Riga"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 282
+},
+{
+    "fields": {
+        "city": "Riyadh"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 283
+},
+{
+    "fields": {
+        "city": "Road Town"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 284
+},
+{
+    "fields": {
+        "city": "Rome"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 285
+},
+{
+    "fields": {
+        "city": "Roseau"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 286
+},
+{
+    "fields": {
+        "city": "Sacramento"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 287
+},
+{
+    "fields": {
+        "city": "Saint Helier"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 288
+},
+{
+    "fields": {
+        "city": "Saint Paul"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 289
+},
+{
+    "fields": {
+        "city": "Saint Pierre"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 290
+},
+{
+    "fields": {
+        "city": "Saipan"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 291
+},
+{
+    "fields": {
+        "city": "Salem"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 292
+},
+{
+    "fields": {
+        "city": "Salt Lake City"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 293
+},
+{
+    "fields": {
+        "city": "San Diego"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 294
+},
+{
+    "fields": {
+        "city": "San Francisco"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 295
+},
+{
+    "fields": {
+        "city": "San Jose"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 296
+},
+{
+    "fields": {
+        "city": "San Juan"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 297
+},
+{
+    "fields": {
+        "city": "San Marino"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 298
+},
+{
+    "fields": {
+        "city": "San Salvador"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 299
+},
+{
+    "fields": {
+        "city": "Sana"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 300
+},
+{
+    "fields": {
+        "city": "Sana'a"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 301
+},
+{
+    "fields": {
+        "city": "Santa Fe"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 302
+},
+{
+    "fields": {
+        "city": "Santiago"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 303
+},
+{
+    "fields": {
+        "city": "Santo Domingo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 304
+},
+{
+    "fields": {
+        "city": "Sao Tome"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 305
+},
+{
+    "fields": {
+        "city": "Sarajevo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 306
+},
+{
+    "fields": {
+        "city": "Seattle"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 307
+},
+{
+    "fields": {
+        "city": "Seoul"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 308
+},
+{
+    "fields": {
+        "city": "Sheffield"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 309
+},
+{
+    "fields": {
+        "city": "Singapore"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 310
+},
+{
+    "fields": {
+        "city": "Sioux Falls"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 311
+},
+{
+    "fields": {
+        "city": "Skopje"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 312
+},
+{
+    "fields": {
+        "city": "Sofia"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 313
+},
+{
+    "fields": {
+        "city": "Southampton"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 314
+},
+{
+    "fields": {
+        "city": "Springfield"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 315
+},
+{
+    "fields": {
+        "city": "Sri Jayawardenapura Kotte"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 316
+},
+{
+    "fields": {
+        "city": "St. George's"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 317
+},
+{
+    "fields": {
+        "city": "St. John's"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 318
+},
+{
+    "fields": {
+        "city": "St. Peter Port"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 319
+},
+{
+    "fields": {
+        "city": "Stanley"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 320
+},
+{
+    "fields": {
+        "city": "Stockholm"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 321
+},
+{
+    "fields": {
+        "city": "Sucre"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 322
+},
+{
+    "fields": {
+        "city": "Suva"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 323
+},
+{
+    "fields": {
+        "city": "Swansea"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 324
+},
+{
+    "fields": {
+        "city": "Swindon"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 325
+},
+{
+    "fields": {
+        "city": "Sydney"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 326
+},
+{
+    "fields": {
+        "city": "T'bilisi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 327
+},
+{
+    "fields": {
+        "city": "Taipei"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 328
+},
+{
+    "fields": {
+        "city": "Tallahassee"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 329
+},
+{
+    "fields": {
+        "city": "Tallinn"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 330
+},
+{
+    "fields": {
+        "city": "Tarawa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 331
+},
+{
+    "fields": {
+        "city": "Tashkent"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 332
+},
+{
+    "fields": {
+        "city": "Tbilisi"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 333
+},
+{
+    "fields": {
+        "city": "Tegucigalpa"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 334
+},
+{
+    "fields": {
+        "city": "Tehran"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 335
+},
+{
+    "fields": {
+        "city": "Thimphu"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 336
+},
+{
+    "fields": {
+        "city": "Tirana"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 337
+},
+{
+    "fields": {
+        "city": "Tirane"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 338
+},
+{
+    "fields": {
+        "city": "Tokyo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 339
+},
+{
+    "fields": {
+        "city": "Toledo"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 340
+},
+{
+    "fields": {
+        "city": "Topeka"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 341
+},
+{
+    "fields": {
+        "city": "Torshavn"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 342
+},
+{
+    "fields": {
+        "city": "Trenton"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 343
+},
+{
+    "fields": {
+        "city": "Tripoli"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 344
+},
+{
+    "fields": {
+        "city": "Tunis"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 345
+},
+{
+    "fields": {
+        "city": "Ulaanbataar"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 346
+},
+{
+    "fields": {
+        "city": "Ulan Bator"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 347
+},
+{
+    "fields": {
+        "city": "Vaduz"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 348
+},
+{
+    "fields": {
+        "city": "Valletta"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 349
+},
+{
+    "fields": {
+        "city": "Vienna"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 350
+},
+{
+    "fields": {
+        "city": "Vientiane"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 351
+},
+{
+    "fields": {
+        "city": "Vilnius"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 352
+},
+{
+    "fields": {
+        "city": "Virginia Beach"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 353
+},
+{
+    "fields": {
+        "city": "W. Indies"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 354
+},
+{
+    "fields": {
+        "city": "Warsaw"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 355
+},
+{
+    "fields": {
+        "city": "Washington DC"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 356
+},
+{
+    "fields": {
+        "city": "Wellington"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 357
+},
+{
+    "fields": {
+        "city": "Wichita"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 358
+},
+{
+    "fields": {
+        "city": "Willemstad"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 359
+},
+{
+    "fields": {
+        "city": "Wilmington"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 360
+},
+{
+    "fields": {
+        "city": "Windhoek"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 361
+},
+{
+    "fields": {
+        "city": "Wolverhampton"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 362
+},
+{
+    "fields": {
+        "city": "Yamoussoukro"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 363
+},
+{
+    "fields": {
+        "city": "Yangon"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 364
+},
+{
+    "fields": {
+        "city": "Yaounde"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 365
+},
+{
+    "fields": {
+        "city": "Yaren"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 366
+},
+{
+    "fields": {
+        "city": "Yerevan"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 367
+},
+{
+    "fields": {
+        "city": "Zagreb"
+    },
+    "model": "powersocket.AstralCities",
+    "pk": 368
+}]
