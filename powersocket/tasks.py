@@ -11,30 +11,32 @@ logger = get_task_logger(__name__)
 
 
 # A periodic task that will run every minute (the symbol "*" means every)
-@periodic_task(run_every=(timedelta(seconds=1)))
+@periodic_task(run_every=(timedelta(seconds=10)))
 def statecheck():
     schedules = Schedule.objects.all()
     sockets_checked = []
 
     print '---Starting task (' + str(datetime.now()) + ')'
     for schedule in schedules:
-        deviated_now = datetime.now() + timedelta(seconds=-schedule.current_random_deviation)
+        deviated_now = datetime.now() + timedelta(minutes=-schedule.current_random_deviation)
         current_day = DaysOfTheWeek.objects.get(python_dayofweek = deviated_now.weekday())
         change_socket = False
         sockets_on = False
-        print 'Checking schedule: ' + schedule.description + ' (seconds deviation: ' + str(schedule.current_random_deviation) + ')'
+        print 'Checking schedule: ' + schedule.description + ' (minute deviation: ' + str(schedule.current_random_deviation) + ')'
 
         for timeslot in schedule.time_slots.all():
-            print 'Checking time slot: ' + timeslot.start_time.strftime('%H:%M:%S') + '-' + timeslot.end_time.strftime('%H:%M:%S') + ' (' + ', '.join(day.day for day in timeslot.days_of_week.all()) + ')'
+            print 'Checking time slot: ' + timeslot.start_time.strftime('%H:%M') + '-' + timeslot.end_time.strftime('%H:%M') + ' (' + ', '.join(day.day for day in timeslot.days_of_week.all()) + ')'
 
             if timeslot.days_of_week.filter(python_dayofweek = deviated_now.weekday()).exists():
-                if deviated_now.time().strftime('%H:%M:%S') == timeslot.start_time.strftime('%H:%M:%S'):
+                if deviated_now.time().strftime('%H:%M') == timeslot.start_time.strftime('%H:%M'):
                     print ' - Triggering socket switch on! (time deveation: ' + str(schedule.current_random_deviation) + ')'
                     sockets_on = True
                     change_socket = True
-                elif deviated_now.time().strftime('%H:%M:%S') == timeslot.end_time.strftime('%H:%M:%S'):
+                    timeslot.save()    # trigger non manual time generation
+                elif deviated_now.time().strftime('%H:%M') == timeslot.end_time.strftime('%H:%M'):
                     print ' - Triggering socket switch off! (time deveation: ' + str(schedule.current_random_deviation) + ')'
                     change_socket = True
+                    timeslot.save()    # trigger non manual time generation
 
             
         # actually do the socket changes
