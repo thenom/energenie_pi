@@ -3,14 +3,16 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
 
-from .models import Socket
+from .models import Socket, Schedule
 
 # Create your views here.
 def index(request):
     sockets = Socket.objects.all()
+    schedules = Schedule.objects.all()
     template = loader.get_template('powersocket/socketcontrol.html')
     context = {
         'sockets': sockets,
+        'schedules': schedules,
     }
     return HttpResponse(template.render(context, request))
 

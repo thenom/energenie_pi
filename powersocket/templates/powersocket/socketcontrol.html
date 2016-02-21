@@ -72,6 +72,13 @@
       font-weight: bold;
       background: transparent;
     }
+    .schedule_group_div {
+      color: white;
+      text-align: center;
+    }
+    .schedule_div {
+      padding: 10px; 
+    }
   </style>
 </head>
 
@@ -128,6 +135,20 @@
       {% endfor %}
     </tbody>
   </table>
+  <div class="schedule_group_div">
+    <h2>Schedule details</h2>
+    {% for sched in schedules.all %}
+    <div class="schedule_div">
+      <p>
+      <h3>{{ sched.description }}</h3>
+      {% for timeslot in sched.time_slots.all %}
+      {{ timeslot }}
+      <br/>
+      {% endfor %}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
 {% else %}
     <p>No sockets configured!</p>
 {% endif %}

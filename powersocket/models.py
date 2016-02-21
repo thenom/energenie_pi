@@ -1,9 +1,10 @@
 from django.db import models
 from socket_functions import socket_control
 import random
-from datetime import timedelta
+from datetime import timedelta, datetime
 from django.utils import timezone
 from astral import Astral
+from multiselectfield import MultiSelectField
 
 energenie = socket_control()
 
@@ -54,34 +55,56 @@ class TimeSlot(models.Model):
         ('dusk','Dusk'),
     )
 
+    PYTHON_DAYS = (
+        ('0','Monday'),
+        ('1','Tuesday'),
+        ('2','Wednesday'),
+        ('3','Thursday'),
+        ('4','Friday'),
+        ('5','Saturday'),
+        ('6','Sunday'),
+    )
+
     city = models.ForeignKey(AstralCities, default=1)
     start_time_mode = models.CharField(max_length=10, choices=TIME_MODE, default='M')
-    start_time = models.TimeField(help_text='Seconds are ignored and time will be overwritten if manual mode is not selected')
+    start_time = models.TimeField(help_text='Seconds are ignored and time will be overwritten if manual mode is not selected', default='00:00:00')
     end_time_mode = models.CharField(max_length=10, choices=TIME_MODE, default='M')
-    end_time = models.TimeField(help_text='Seconds are ignored and time will be overwritten if manual mode is not selected')
-    days_of_week = models.ManyToManyField(DaysOfTheWeek)
+    end_time = models.TimeField(help_text='Seconds are ignored and time will be overwritten if manual mode is not selected', default='00:00:00')
+    days_of_week = MultiSelectField(choices=PYTHON_DAYS)
 
     def __str__(self):
-        return self.start_time.strftime('%H:%M') + '(' + self.start_time_mode + ')-' + self.end_time.strftime('%H:%M') + '(' + self.end_time_mode + ') (' + ', '.join(day.day for day in self.days_of_week.all()) + ')'
+#        return self.start_time.strftime('%H:%M') + '(' + self.start_time_mode + ')-' + self.end_time.strftime('%H:%M') + '(' + self.end_time_mode + ') (' + ', '.join(day.day for day in self.days_of_week.all()) + ')'
+        days_list = []
+        for int,day in self.PYTHON_DAYS:
+            if int in self.days_of_week:
+                days_list.append(day)
+        return self.start_time.strftime('%H:%M') + '(' + self.start_time_mode + ')-' + self.end_time.strftime('%H:%M') + '(' + self.end_time_mode + ') (' + ', '.join(days_list) + ')'
 
     def save(self, *args, **kwargs):
         if self.start_time_mode != 'M':
-            self.start_time = self.get_time(self.start_time_mode, self.city)
+            self.start_time = self.set_time(self. start_time_mode, self.city, self.days_of_week)
         if self.end_time_mode != 'M':
-            self.end_time = self.get_time(self.end_time_mode, self.city)
+            self.end_time = self.set_time(self.end_time_mode, self.city, self.days_of_week)
         super(TimeSlot, self).save(*args, **kwargs) # Call the "real" save() method.
 
-    def get_time(self, mode, city):
-        a = Astral()
+    def set_time(self, mode, city, days_of_week):
         now = timezone.now()
+        deltadays = 0
+        week_day_count = now.weekday()
+        a = Astral()
         cur_city = a[city]
-        sun = cur_city.sun(date=timezone.now(), local=True)
-        if sun[mode] < now:
-            sun = cur_city.sun(date=timezone.now() + timedelta(days=1), local=True)
-        print 'Generated ' + mode + ' time: ' + str(sun[mode]) + ' (using current time ' + str(now) + ')'
-        
+        for day_shift in range(1,7):
+            if week_day_count > 6:
+                week_day_count = 0
+            if str(week_day_count) in days_of_week:
+                sun = cur_city.sun(date=timezone.now() + timedelta(days=deltadays), local=True)
+                if sun[mode] > now:
+                    break
+            deltadays += 1
+            week_day_count +=1
+        print 'Generated ' + mode + ' time: ' + str(sun[mode]) + ' using time current time of ' + str(timezone.now()) + ' (' + str(deltadays) + ' days ahead)'
+
         return sun[mode].time()
-        
 
 
 class Schedule(models.Model):
