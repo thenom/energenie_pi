@@ -6,6 +6,8 @@ It check the schedules every minute and modifies the state of the socket accordi
 
 The on\off time can be controlled by the following day time based on a selected city: manually(default), dawn, dusk, sunrise, sunset, noon.
 
+* Credit to https://github.com/goinnn/django-multiselectfield for the multiselectfield
+
 Basic useful feature list:
 
  * Setup and modify sockets for control
