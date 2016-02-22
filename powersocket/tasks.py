@@ -25,9 +25,9 @@ def statecheck():
         print 'Checking schedule: ' + schedule.description + ' (minute deviation: ' + str(schedule.current_random_deviation) + ')'
 
         for timeslot in schedule.time_slots.all():
-            print 'Checking time slot: ' + timeslot.start_time.strftime('%H:%M') + '-' + timeslot.end_time.strftime('%H:%M') + ' (' + ', '.join(day.day for day in timeslot.days_of_week.all()) + ')'
+            print 'Checking time slot: ' + str(timeslot)
 
-            if timeslot.days_of_week.filter(python_dayofweek = deviated_now.weekday()).exists():
+            if str(deviated_now.weekday()) in timeslot.days_of_week:
                 if deviated_now.time().strftime('%H:%M') == timeslot.start_time.strftime('%H:%M'):
                     print ' - Triggering socket switch on! (time deveation: ' + str(schedule.current_random_deviation) + ')'
                     sockets_on = True
