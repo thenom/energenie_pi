@@ -68,9 +68,9 @@ To access the admin pages:
 \<host\>:8000/admin
 
 # Setup
-You will need to modify the run script to match your own working directory.  To get this to work on boot in my setup i just placed this script in rc.local, adding the & at the end to force it to run in the background.  You will also need to modify the celery ampq URL and your MySQL database details in energenie_pi/settings.py to match your own RabbitMQ\Redis\MySQL server setup.  It is currently using a vhost of 'energenie_pi', a user of 'energenie_pi' and password 'Passw0rd'.
+You will need to modify the run script to match your own working directory.  To get this to work on boot in my setup i just placed this script in rc.local, adding the & at the end to force it to run in the background.  You will also need to modify the celery BROKER_URL and your DATABASES details in energenie_pi/settings.py to match your own RabbitMQ\Redis\MySQL\SQLite server setup.
 
-You will also need to change your 'ALLOWED_HOSTS' in energenie_pi/settings.py to the URL you are calling for your local setup.
+You will also need to change your 'ALLOWED_HOSTS' in energenie_pi/settings.py to the URL you are calling for your local setup.  This is required if you set DEBUG to false in the same file.
 
 # Notes:
 
