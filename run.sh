@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CWD="/home/thenom.local/simon.thorley/SimonNas/Energinie RPi/energenie_pi/"
+CWD="/usr/local/energenie_pi/"
 PYTHON=/usr/bin/python
 BINDADDR=0.0.0.0
 PORT=8000
