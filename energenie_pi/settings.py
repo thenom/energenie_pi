@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@ww$#1*ke3khx9eb@36bmmn&71ihb++f$tv#6t7-=*z$x_zgo('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [ '192.168.101.147' ]
+ALLOWED_HOSTS = [ '127.0.0.1' ]
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'djcelery',
     'powersocket',
+    'multiselectfield',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,23 +78,23 @@ WSGI_APPLICATION = 'energenie_pi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'energenie-pi',
-        'USER': 'energenie-pi',
-        'PASSWORD': 'Passw0rd',
-        'HOST': 'stbignas2.thenom.local',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'energenie-pi',
+#        'USER': 'energenie-pi',
+#        'PASSWORD': 'Passw0rd',
+#        'HOST': 'mysql-server,
+#        'PORT': '3306',
+#    }
+#}
 
 
 # Internationalization
@@ -120,8 +121,8 @@ STATIC_URL = '/static/'
 CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
 CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 
-#BROKER_URL = 'amqp://energenie_pi:Passw0rd@localhost:5672/energenie_pi'
-BROKER_URL = 'amqp://energenie_pi:Passw0rd@stbignas2.thenom.local:5672/energenie_pi'
+#BROKER_URL = 'amqp://user:password@rabbitmq-server:5672/energenie_pi'
+#BROKER_URL = 'redis://redis-server:6379/0'
 
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
