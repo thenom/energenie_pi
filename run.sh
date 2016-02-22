@@ -1,12 +1,12 @@
 #!/bin/bash
 
-CWD="/usr/local/energenie-pi/"
+CWD="/home/thenom.local/simon.thorley/SimonNas/Energinie RPi/energenie_pi/"
 PYTHON=/usr/bin/python
 BINDADDR=0.0.0.0
 PORT=8000
 
 # setup days of the week
-$PYTHON "${CWD}manage.py" loaddata daysofweek.json
+$PYTHON "${CWD}manage.py" loaddata AstralCities.json
 
 $PYTHON "${CWD}manage.py" celerybeat &
 BEATPID=$!
