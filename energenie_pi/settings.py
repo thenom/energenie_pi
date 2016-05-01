@@ -91,7 +91,7 @@ DATABASES = {
 #        'NAME': 'energenie-pi',
 #        'USER': 'energenie-pi',
 #        'PASSWORD': 'Passw0rd',
-#        'HOST': 'mysql-server,
+#        'HOST': 'mysql-server',
 #        'PORT': '3306',
 #    }
 #}
@@ -100,9 +100,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/London'
 
 USE_I18N = True
 
@@ -115,15 +115,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# Celery
-
-CELERY_RESULT_BACKEND = 'djcelery.backends.database:DatabaseBackend'
-CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-
-#BROKER_URL = 'amqp://user:password@rabbitmq-server:5672/energenie_pi'
-#BROKER_URL = 'redis://redis-server:6379/0'
-
-CELERY_ACCEPT_CONTENT = ['json']
-CELERY_TASK_SERIALIZER = 'json'
-CELERY_RESULT_SERIALIZER = 'json'
