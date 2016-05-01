@@ -42,7 +42,10 @@
             <p>Schedules:
             {% if socket.schedule_set.all %}
             {% for sched in socket.schedule_set.all %}
-            {{ sched }}
+	    {{ sched }}
+	    {% if socket.override_time_end != None %}
+	     (Overriden until {{ socket.override_time_end }})
+	    {% endif %}
             {% endfor %}
             {% else %}
             (none)
@@ -55,11 +58,11 @@
     </tbody>
   </table>
   <div class="schedule_group_div">
-    <h2>Schedule details</h2>
+    <h1>Schedule details</h1>
     {% for sched in schedules.all %}
     <div class="schedule_div">
       <p>
-      <h3>{{ sched.description }}</h3>
+      <h3>{{ sched.description }} - Current deviation: {{sched.current_random_deviation}}s</h3>
       {% for timeslot in sched.time_slots.all %}
       {{ timeslot }}
       <br/>
@@ -67,6 +70,7 @@
       </p>
     </div>
     {% endfor %}
+    <h6>system time - {% now "D, jS N - H:i:s" %}</h6>
   </div>
 {% else %}
     <p>No sockets configured!</p>

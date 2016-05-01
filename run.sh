@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source run_config
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "${DIR}/run_config"
 
 # setup days of the week
 $PYTHON "${CWD}manage.py" loaddata AstralCities.json

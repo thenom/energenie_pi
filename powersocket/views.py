@@ -21,6 +21,7 @@ def update_socket(request, socket_id):
     if socket_id == 'alloff' or socket_id == 'allon':
         print 'Setting sockets to: ' + socket_id
         for socket in Socket.objects.all():
+            socket.override_time_end = datetime.now()
             if socket_id == 'alloff':
                 state = False
             elif socket_id == 'allon':
@@ -32,6 +33,7 @@ def update_socket(request, socket_id):
         socket = get_object_or_404(Socket, socket_id=socket_id)
 
         print 'Setting socket ' + socket.name + ' to: ' + request.POST['change_to']
+        socket.override_time_end = datetime.now() + timedelta(minutes=10)
         if request.POST['change_to'] == 'on':
             socket.current_state = True
             socket.save()
@@ -71,22 +73,44 @@ def sched_check(request):
                     change_socket = True
                     timeslot.save()    # trigger non manual time generation
 
-
         # actually do the socket changes
         if change_socket == True:
             for socket in schedule.socket.all():
+                currenttime = datetime.now()
                 print '...Checking socket: ' + socket.name
                 if socket not in sockets_checked:
                     sockets_checked.append(socket)
 
+                # clear up old override times
+                if socket.override_time_end != None:
+                    if socket.override_time_end.strftime('%H:$M') < datetime.now().strftime('%H:%M'):
+                        socket.override_time_end == None
+                        socket.save()
+
                 if socket.current_state != sockets_on:
-                    if sockets_on == True:
-                        print '......turning socket on'
+                    override = False
+                    if socket.override_time_end != None:
+                        if currenttime.strftime('%H:%M') < socket.override_time_end.strftime('%H:%M'):
+                            override = True
+                    if override == False:
+                        if sockets_on == True:
+                            print '......turning socket on'
+                        else:
+                            print '......turning socket off'
+                        schedule.save()     # trigger save to generate new random deviation value
+                        socket.current_state = sockets_on
+                        socket.override_time_end = None
+                        socket.save()
                     else:
-                        print '......turning socket off'
-                    schedule.save()     # trigger save to generate new random deviation value
-                    socket.current_state = sockets_on
-                    socket.save()
+                        print 'Scheduled change has been overridden by manual socket state change!  Socket state will not change'
+
+    # clear up old override times
+    for socket in Socket.objects.all():
+        if socket.override_time_end != None:
+            if socket.override_time_end.strftime('%H:%M') < datetime.now().strftime('%H:%M'):
+                print 'Clearing overide time for socket: ' + socket.name
+                socket.override_time_end = None
+                socket.save()
 
     print '---Task finished'
     return HttpResponse('Scheduled check complete')

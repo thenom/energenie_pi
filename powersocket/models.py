@@ -33,6 +33,7 @@ class Socket(models.Model):
     socket_id = models.IntegerField(default=0,unique=True)
     name = models.CharField(max_length=200)
     current_state = models.BooleanField(default=False)
+    override_time_end = models.TimeField(help_text='This is the time set to stop the schedule undoing you manual socket changes.  Schedules triggered before this time will be ignored.  It is set when you manually change a socket state to the time + 10 minutes.', null=True, blank=True)
 
     def __str__(self):
         return self.name
@@ -41,9 +42,9 @@ class Socket(models.Model):
         super(Socket, self).save(*args, **kwargs) # Call the "real" save() method.
         print 'Physically setting the socket (' + self.name + ') switch to ' + str(self.current_state)
         if self.current_state == True:
-             energenie.socket_on(self.id)
+            energenie.socket_on(self.id)
         else:
-             energenie.socket_off(self.id)
+            energenie.socket_off(self.id)
  
 class TimeSlot(models.Model):
     TIME_MODE = (
