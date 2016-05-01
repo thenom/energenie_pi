@@ -1,5 +1,0 @@
-CWD="/home/thenom.local/simon.thorley/SimonNas/Energinie RPi/energenie_pi/"
-PYTHON=/usr/bin/python
-BINDADDR=0.0.0.0
-PORT=8000
-CHECKINTER=5
