@@ -107,7 +107,7 @@ def sched_check(request):
     # clear up old override times
     for socket in Socket.objects.all():
         if socket.override_time_end != None:
-            if socket.override_time_end.strftime('%H:%M') < datetime.now().strftime('%H:%M'):
+            if socket.override_time_end.strftime('%H:%M') < datetime.now().strftime('%H:%M') or datetime.now().strftime('%H:%M') == "00:00":
                 print 'Clearing overide time for socket: ' + socket.name
                 socket.override_time_end = None
                 socket.save()
