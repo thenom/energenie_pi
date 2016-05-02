@@ -54,7 +54,6 @@ def sched_check(request):
     print '---Starting task (' + str(datetime.now()) + ')'
     for schedule in schedules:
         deviated_now = datetime.now() + timedelta(minutes=-schedule.current_random_deviation)
-        current_day = DaysOfTheWeek.objects.get(python_dayofweek = deviated_now.weekday())
         change_socket = False
         sockets_on = False
         print 'Checking schedule: ' + schedule.description + ' (minute deviation: ' + str(schedule.current_random_deviation) + ')'
