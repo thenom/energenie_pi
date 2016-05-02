@@ -21,7 +21,7 @@ def update_socket(request, socket_id):
     if socket_id == 'alloff' or socket_id == 'allon':
         print 'Setting sockets to: ' + socket_id
         for socket in Socket.objects.all():
-            socket.override_time_end = datetime.now()
+            socket.override_time_end = datetime.now() + timedelta(minutes=10)
             if socket_id == 'alloff':
                 state = False
             elif socket_id == 'allon':
