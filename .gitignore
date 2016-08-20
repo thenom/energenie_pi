@@ -1,0 +1,7 @@
+db.sqlite3
+powersocket/migrations
+powersocket/migrations.old
+run_config
+*.pyc
+energenie_pi/settings.py
+energenie_pi/settings.pyc
