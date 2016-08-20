@@ -20,7 +20,6 @@ Basic useful feature list:
 # Dependencies
 
  * Django 1.8
- * RabbitMQ/Redis
  * Raspberry Pi with Networking
  * Energenie Raspberry Pi Hat (ENER314\ENER314-RT)   # See Note1
  
