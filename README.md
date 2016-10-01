@@ -1,5 +1,7 @@
 # Energenie Pi Control
 
+Now works with Amazon Echo :)  (https://github.com/thenom/Alexa-Energenie)
+
 This is a Django project a provides a basic control webpage for current state info and main socket control buttons.  It is designed for use with the Raspberry Pi and the Energenie Pi Hat (ENER314\ENER314-RT).  The default is to use a local SQLLite DB file but this can be changed (https://docs.djangoproject.com/en/1.9/ref/settings/#databases).
 
 It checks the schedules at an interval set by the variable CHECKINTER in the run_config file (see setup below) and modifies the state of the socket accordingly.  You can apply a random deviation the the schedule to mimic variations in turning the sockets on and off.  For example, if a schedule is set to turn a socket on at 16:30 and has a random minute value of 10 minutes then the light will turn on between 16:20 and 16:40.
